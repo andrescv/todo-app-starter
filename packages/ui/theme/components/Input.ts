@@ -16,7 +16,10 @@ export const Input = {
       boxShadow: '0 0 0 2px #6200ee',
     },
     '&[data-invalid=true]': {
-      boxShadow: '0 0 0 2px #ec407a',
+      'boxShadow': '0 0 0 2px #ec407a',
+      '&::placeholder': {
+        color: 'red',
+      },
     },
   },
 };
