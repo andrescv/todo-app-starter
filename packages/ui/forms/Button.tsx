@@ -40,7 +40,7 @@ const RightIconContainer = styled('span')({
 
 export type ButtonProps = StyleProps &
   Omit<React.HTMLProps<HTMLButtonElement>, keyof StyleProps> & {
-    variant?: ResponsiveValue<'solid' | 'logout'>;
+    variant?: ResponsiveValue<'gradient' | 'primary' | 'logout'>;
 
     leftIcon?: React.ReactNode;
 

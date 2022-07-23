@@ -1,9 +1,30 @@
 export const Button = {
-  solid: {
+  gradient: {
     'width': 'full',
     'padding': ['0.75rem', '1rem'],
     'color': 'white',
     'backgroundImage': `linear-gradient(to right, #8133f1 0%, #6200ee 50%, #8133f1 100%)`,
+    'fontFamily': 'body',
+    'fontWeight': 'bold',
+    'fontSize': ['text.xs', 'text.sm'],
+    'lineHeight': '2',
+    'textAlign': 'center',
+    'transition': `background-position 0.5s ease-out, box-shadow 0.2s ease-out`,
+    'backgroundSize': '200% auto',
+    'borderRadius': 'md',
+    '&:hover': {
+      backgroundPosition: 'right center',
+      textDecoration: 'none',
+    },
+    '&:focus': {
+      boxShadow: '0 0 0 2px #111827, 0 0 0 4px #5900d9',
+    },
+  },
+  primary: {
+    'width': 'full',
+    'padding': ['0.75rem', '1rem'],
+    'color': 'white',
+    'bg': 'purple',
     'fontFamily': 'body',
     'fontWeight': 'bold',
     'fontSize': ['text.xs', 'text.sm'],

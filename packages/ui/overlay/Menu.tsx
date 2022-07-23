@@ -2,7 +2,6 @@ import initials from 'initials';
 import React from 'react';
 import { BiLogOut, BiMenu } from 'react-icons/bi';
 import { usePopper } from 'react-popper';
-import { useOutsideClick } from 'rooks';
 
 import { Button, IconButton } from '../forms';
 import { Box, Flex } from '../layout';
@@ -24,7 +23,24 @@ export const Menu: React.FC<MenuProps> = ({ fullName, onSignOutClick }) => {
   const [referenceElement, setReferenceElement] = elementRef;
   const [popperElement, setPopperElement] = popperRef;
 
-  useOutsideClick(ref, () => setOpen(false));
+  React.useEffect(() => {
+    const listener = (event: any) => {
+      // Do nothing if clicking ref's element or descendent elements
+      if (!ref.current || ref.current.contains(event.target)) {
+        return;
+      }
+
+      setOpen(false);
+    };
+
+    document.addEventListener('mousedown', listener);
+    document.addEventListener('touchstart', listener);
+
+    return () => {
+      document.removeEventListener('mousedown', listener);
+      document.removeEventListener('touchstart', listener);
+    };
+  }, [ref]);
 
   const handleMenuClick = React.useCallback(() => {
     setOpen((open) => !open);
