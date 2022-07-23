@@ -14,6 +14,7 @@ const context = ({ req, res }: any) => {
 export const GraphQLConfig: ApolloDriverConfig = {
   driver: ApolloDriver,
   playground: EnvConfig.isDev,
+  persistedQueries: false,
   typePaths: ['**/*.graphql'],
   context,
   cors: CORSConfig,
