@@ -1,0 +1,6 @@
+type Query {
+  """
+  Dummy.
+  """
+  dummy: Boolean
+}
