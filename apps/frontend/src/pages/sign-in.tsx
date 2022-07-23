@@ -1,8 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 import { FormEvent, useCallback } from 'react';
 
-import { Button, Flex, Input, Password } from '@todo/ui';
+import { Button, Flex, Input, NavLink, Password } from '@todo/ui';
 
 import { AuthLayout } from '~layouts/AuthLayout';
 
@@ -31,6 +32,11 @@ const SignInPage: NextPage = () => {
           <Flex flexDirection="column" width="full" gap="1.25rem">
             <Input type="email" variant="auth" placeholder="Email" />
             <Password placeholder="Password" />
+            <Link href="/sign-up" passHref>
+              <NavLink fontSize="text.xs" lineHeight="1" color="blueGray">
+                Don&apos;t have an account?
+              </NavLink>
+            </Link>
           </Flex>
           <Button type="submit" variant="gradient">
             Sign In
