@@ -12,7 +12,12 @@ const HomePage: NextPage = () => {
         <title>TODO / Home</title>
       </Head>
       <DashboardLayout>
-        <Flex flexDirection="column" alignItems="center" gap="2rem">
+        <Flex
+          width={['20rem', '28rem']}
+          flexDirection="column"
+          alignItems="center"
+          gap="2rem"
+        >
           <Flex as="form" width="full" alignItems="center" gap="1rem">
             <Input
               type="text"
@@ -21,7 +26,7 @@ const HomePage: NextPage = () => {
               flexGrow="1"
               placeholder="Add todo"
             />
-            <Button variant="primary" width="4rem">
+            <Button type="submit" variant="primary" width="4rem">
               Add
             </Button>
           </Flex>
