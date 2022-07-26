@@ -5,7 +5,7 @@ import { FormEvent, useCallback } from 'react';
 
 import { Button, Flex, Input, NavLink, Password } from '@todo/ui';
 
-import { AuthLayout } from '~layouts/AuthLayout';
+import { AuthLayout } from '@/layouts/AuthLayout';
 
 const SignUpPage: NextPage = () => {
   const handleSubmit = useCallback((e: FormEvent<HTMLDivElement>) => {

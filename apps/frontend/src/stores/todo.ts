@@ -1,5 +1,4 @@
 import { makeAutoObservable } from 'mobx';
-import validator from 'validator';
 
 export class TodoStore {
   value = '';

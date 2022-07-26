@@ -1,8 +1,7 @@
+import Logo from '@public/logo.png';
 import Image from 'next/image';
 
 import { Box, Flex, Menu } from '@todo/ui';
-
-import Logo from '~public/logo.png';
 
 export const DashboardNavbar: React.FC = () => {
   return (

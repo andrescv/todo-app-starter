@@ -3,9 +3,9 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Request } from 'express';
 import { Strategy } from 'passport-jwt';
 
-import { JWTConfig } from '~configs/jwt';
-import { SessionConfig } from '~configs/session';
-import { DBService } from '~modules/db/db.service';
+import { JWTConfig } from '@/configs/jwt';
+import { SessionConfig } from '@/configs/session';
+import { DBService } from '@/modules/db/db.service';
 
 import { AuthToken } from './interfaces/auth-token.interface';
 

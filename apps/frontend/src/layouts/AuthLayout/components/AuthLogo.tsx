@@ -1,8 +1,7 @@
+import Logo from '@public/logo.png';
 import Image from 'next/image';
 
 import { Box } from '@todo/ui';
-
-import Logo from '~public/logo.png';
 
 export const AuthLogo: React.FC = () => (
   <Box marginTop={['8rem', '12rem']}>

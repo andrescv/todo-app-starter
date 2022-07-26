@@ -3,11 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "~public/*": ["public/*"],
-      "~graphql/*": ["src/graphql/*"],
-      "~layouts/*": ["src/layouts/*"],
-      "~stores/*": ["src/stores/*"],
-      "~utils/*": ["src/utils/*"]
+      "@public/*": ["public/*"],
+      "@/*": ["src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

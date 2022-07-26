@@ -6,7 +6,7 @@ export class GlobalValidationPipe extends ValidationPipe {
     super({
       whitelist: true,
       exceptionFactory: (validationErrors: ValidationError[]) => {
-        return new UserInputError('Invalid input.', {
+        return new UserInputError('Validator error.', {
           validationErrors,
         });
       },

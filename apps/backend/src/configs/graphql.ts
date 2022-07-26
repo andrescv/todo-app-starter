@@ -15,6 +15,8 @@ export const GraphQLConfig: ApolloDriverConfig = {
   driver: ApolloDriver,
   playground: EnvConfig.isDev,
   persistedQueries: false,
+  csrfPrevention: true,
+  cache: 'bounded',
   typePaths: ['**/*.graphql'],
   context,
   cors: CORSConfig,

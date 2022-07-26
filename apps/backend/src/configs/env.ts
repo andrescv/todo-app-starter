@@ -1,6 +1,8 @@
+const NODE_ENV = process.env.NODE_ENV || 'development';
+
 export const EnvConfig = {
-  name: process.env.NODE_ENV || 'development',
-  isDev: process.env.NODE_ENV === 'development',
-  isProd: process.env.NODE_ENV === 'production',
-  isStaging: process.env.NODE_ENV === 'staging',
+  name: NODE_ENV,
+  isDev: NODE_ENV === 'development',
+  isProd: NODE_ENV === 'production',
+  isStaging: NODE_ENV === 'staging',
 };

@@ -4,10 +4,8 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "~common/*": ["src/common/*"],
-      "~configs/*": ["src/configs/*"],
-      "~modules/*": ["src/modules/*"],
-      "~app": ["src/app.module"]
+      "@/*": ["src/*"],
+      "@app": ["src/app.module"]
     }
   },
   "include": ["./src"],

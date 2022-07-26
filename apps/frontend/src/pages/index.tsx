@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import { Button, Flex, Input, TodoItem } from '@todo/ui';
 
-import { DashboardLayout } from '~layouts/DashboardLayout';
+import { DashboardLayout } from '@/layouts/DashboardLayout';
 
 const HomePage: NextPage = () => {
   return (
