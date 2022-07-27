@@ -1,6 +1,43 @@
 type Query {
   """
-  Dummy.
+  Get user todos.
   """
-  dummy: Boolean
+  getTodos: [Todo!]!
+}
+
+type Mutation {
+  """
+  Sign up.
+  """
+  signUp(input: SignUpInput!): User!
+
+  """
+  Sign in.
+  """
+  signIn(input: SignInInput!): User!
+
+  """
+  Sign out.
+  """
+  signOut: Boolean!
+
+  """
+  Add todo.
+  """
+  addTodo(input: AddTodoInput!): Todo!
+
+  """
+  Toggle todo.
+  """
+  toggleTodo(input: ToggleTodoInput!): Todo!
+
+  """
+  Remove todo.
+  """
+  removeTodo(input: RemoveTodoInput!): Boolean!
+
+  """
+  Remove all todos.
+  """
+  removeAllTodos: Boolean!
 }

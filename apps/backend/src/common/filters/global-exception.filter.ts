@@ -14,9 +14,6 @@ import {
 export class GlobalExceptionFilter implements ExceptionFilter {
   catch(exception: any) {
     if (exception instanceof ApolloError) {
-      console.error(exception.message);
-      console.error(exception.stack || '');
-
       return exception;
     }
 

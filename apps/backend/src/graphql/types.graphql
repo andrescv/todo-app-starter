@@ -1,0 +1,59 @@
+"""
+User.
+"""
+type User {
+  """
+  User id.
+  """
+  id: ID!
+
+  """
+  User full name.
+  """
+  fullName: String!
+
+  """
+  User email.
+  """
+  email: String!
+
+  """
+  User created at.
+  """
+  createdAt: DateTime!
+
+  """
+  User updated at.
+  """
+  updatedAt: DateTime!
+}
+
+"""
+Todo.
+"""
+type Todo {
+  """
+  Todo id.
+  """
+  id: ID!
+
+  """
+  Todo value.
+  """
+  value: String!
+
+  """
+  Todo is complete.
+  """
+  isComplete: Boolean!
+
+  """
+  Todo created at.
+  """
+  createdAt: DateTime!
+
+  """
+  Todo updated at.
+  """
+  updatedAt: DateTime!
+}
