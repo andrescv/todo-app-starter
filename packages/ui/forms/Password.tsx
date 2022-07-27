@@ -93,8 +93,8 @@ export const Password = React.forwardRef<HTMLInputElement, PasswordProps>(
           aria-label={show ? 'Hide password' : 'Show password'}
           onClick={handleShowHidePasswordClick}
         >
-          {!show && <BiShow />}
-          {show && <BiHide />}
+          {show && <BiShow />}
+          {!show && <BiHide />}
         </ShowHideButton>
       </InputContainer>
     );
