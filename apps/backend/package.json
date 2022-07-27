@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "prisma generate && nest build",
+    "prebuild": "rimraf dist && prisma generate",
+    "build": "nest build",
+    "predev": "prisma generate",
     "dev": "nest start --watch",
     "start": "node dist/main.js",
     "lint": "eslint \"src/**/*.ts\" --fix",
